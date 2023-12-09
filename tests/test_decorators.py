@@ -41,8 +41,8 @@ def should_see_issue_with_text(text):
 @allure.link("https://github.com", name="Testing")
 def test_decorator_steps(browser_configs):
     open_main_page()
-    search_for_repository("DariaSkorobogatova/qa_guru_python_9_9")
-    go_to_repository("DariaSkorobogatova/qa_guru_python_9_9")
+    search_for_repository("DariaSkorobogatova/qa_guru_python_allure")
+    go_to_repository("DariaSkorobogatova/qa_guru_python_allure")
     open_issue_tab()
     should_see_issue_with_text("Issue for homework 9 with allure")
 

@@ -11,11 +11,11 @@ def test_dynamic_steps(browser_configs):
 
     with allure.step("Ищем репозиторий"):
         s(".header-search-button").click()
-        s("#query-builder-test").type("DariaSkorobogatova/qa_guru_python_9_9")
+        s("#query-builder-test").type("DariaSkorobogatova/qa_guru_python_allure")
         s("#query-builder-test").submit()
 
     with allure.step("Переходим по ссылке репозитория"):
-        s(by.link_text("DariaSkorobogatova/qa_guru_python_9_9")).click()
+        s(by.link_text("DariaSkorobogatova/qa_guru_python_allure")).click()
 
     with allure.step("Открываем таб Issues"):
         s("#issues-tab").click()
